@@ -18,5 +18,5 @@ if ($result->num_rows > 0) {
 } else {
     echo "0 results";
 }
-//print_r( $telefonkonyvem);
+print_r( $telefonkonyvem);
 

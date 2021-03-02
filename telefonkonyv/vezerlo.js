@@ -2,6 +2,8 @@ $(function () {
     $("#beolvas").on("click", kiir);
 });
 
+var telefonkonyvem=[];
+
 function kiir() {
     var nev = $("#nev").val();
     var tel = $("#tel").val();
@@ -15,9 +17,13 @@ function kiir() {
 
 function beolvas() {
     $.ajax({
+        type:"GET",
         url: "feldolgoz.php",
         success: function (result) {
             console.log(result);
+        },
+        error: function () {
+            alert("hiba az adaztok betöltésekor!");
         }
     });
 }
