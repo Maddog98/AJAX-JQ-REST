@@ -1,6 +1,6 @@
 $(function () {
-    $("#beolvas").on("click", kiir);
-    //$("#kuld").on("click", adBeir);
+    $("#beolvas").on("click", beolvas);
+    $("#kuld").on("click", adBeir);
 });
 
 var telefonkonyvem=[];
