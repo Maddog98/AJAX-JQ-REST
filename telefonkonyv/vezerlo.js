@@ -37,4 +37,28 @@ function beolvas() {
         }
     });
 }
-;
+
+function adBeir() {
+    var szemely = {
+        nev: $("#nev").val(),
+        tel: $("#tel").val(),
+        kep: $("#kep").val()
+
+    };
+    
+    $.ajax({
+        type: "POST",
+        url: "beir.php",
+        data: szemely,
+        success: function (ujszemely) {
+
+            console.log(ujszemely);
+            telefonkonyvem = JSON.parse(ujszemely);
+            console.log(telefonkonyvem);
+            kiir();
+        },
+        error: function () {
+            alert("Hiba az adatok mentésekor");
+        }
+    });
+}
