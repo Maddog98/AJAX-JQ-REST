@@ -8,33 +8,55 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title>Varga Balázs</title>
-        <link href="formazas.css" rel="stylesheet" type="text/css"/>
+        <!--        <link href="formazas.css" rel="stylesheet" type="text/css"/>-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+<!--        <script src="vezerlo.js" type="text/javascript"></script>-->
+        <link href="formazas.css" rel="stylesheet" type="text/css"/>
         <script src="vezerlo.js" type="text/javascript"></script>
     </head>
+
     <body>
         <main>
             <header><h1>Telefonkönyv</h1></header>
             <nav>
                 <ul>
-                   
+
                     <li id="beolvas"><a href="#">Beolvas</a></li>
                 </ul>
 
             </nav>
 
             <section>
-                <p for="nev">név:</p>
-                <input type="text" id="nev" name="nev" value="Valaki Vagyok">
-                <p for="tel">tel:</p>
-                <input type="text" id="tel" name="tel" value="03-30-1234-567">
-                <p for="kep">kép:</p>
-                <input type="text" id="kep" name="kep">
-                <br>
-                <button id="kuld">Küld</button>
+                <form class="urlap">
+                    <p for="nev">név:</p>
+                    <input type="text" id="nev" name="nev" value="Valaki Vagyok">
+                    <p for="tel">tel:</p>
+                    <input type="text" id="tel" name="tel" value="03-30-1234-567">
+                    <p for="kep">kép:</p>
+                    <input type="text" id="kep" name="kep">
+                    <br>
+                    <input type="button" id="kuld" value="Küld" novalidate>
+                </form>
+
 
             </section>
+
+            <section>
+                <form class="urlap elrejt">
+                    <p for="nev2">név:</p>
+                    <input type="text" id="nev" name="nev2" >
+                    <p for="tel2">tel:</p>
+                    <input type="text" id="tel" name="tel2" >
+                    <p for="kep2">kép:</p>
+                    <input type="text" id="kep" name="kep2">
+                    <br>
+                    <input type="button" id="modosit" value="Módósít" novalidate>
+                    <br>
+                    <input type="button" id="megse" value="Mégse" novalidate>    
+                </form>
+            </section>
+            
             <article>
 
 
